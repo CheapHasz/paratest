@@ -166,7 +166,7 @@ final class WrapperWorker
 
     public function stop(): void
     {
-        $this->input->write(self::COMMAND_EXIT);
+        $this->process->stop();
     }
 
     public function getCoverageFileName(): ?string
